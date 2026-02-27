@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: rkd_postgres
+    environment:
+      POSTGRES_DB: rkd
+      POSTGRES_USER: rkd
+      POSTGRES_PASSWORD: rkd
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

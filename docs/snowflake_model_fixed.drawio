@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.2">
+  <diagram id="52bf968e-a94d-4625-8008-a1b60a1d8cb6" name="Page-1">
+    <mxGraphModel dx="1364" dy="510" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;title&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK  title_id&lt;br/&gt;FK  platform_id  → platform&lt;br/&gt;UK  (platform_id, show_id)&lt;br/&gt;show_id&lt;br/&gt;type&lt;br/&gt;title&lt;br/&gt;release_year&lt;br/&gt;rating&lt;br/&gt;date_added_raw&lt;br/&gt;date_added&lt;br/&gt;duration_raw&lt;br/&gt;duration_minutes&lt;br/&gt;seasons&lt;br/&gt;description&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="180" x="460" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;platform&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK  platform_id&lt;br/&gt;UK  platform_name&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="490" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;person&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK  person_id&lt;br/&gt;UK  full_name&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="100" x="800" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;title_person&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK (title_id, person_id, role)&lt;br/&gt;FK title_id  → title&lt;br/&gt;FK person_id → person&lt;br/&gt;role {actor, director}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="205" x="747.5" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;genre&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK  genre_id&lt;br/&gt;UK  genre_name&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="110" x="200" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;title_genre&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK (title_id, genre_id)&lt;br/&gt;FK title_id → title&lt;br/&gt;FK genre_id → genre&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="170" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;country_dim&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK  country_id&lt;br/&gt;UK  country_name&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="120" x="690" y="477.5" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111111;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Menlo,monospace;fontSize=10;" value="&lt;div style=&#39;font-size:12px;font-weight:bold&#39;&gt;title_country&lt;/div&gt;&lt;div style=&#39;font-size:10px;line-height:1.25&#39;&gt;PK (title_id, country_id)&lt;br/&gt;FK title_id   → title&lt;br/&gt;FK country_id → country_dim&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="180" x="460" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="100" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#111111;" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="101" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#111111;" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="102" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#111111;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="103" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#111111;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#111111;" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="105" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#111111;" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="106" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#111111;" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
